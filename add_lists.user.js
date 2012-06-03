@@ -19,7 +19,7 @@
   $ = w.$; 
 })();
 
-var screen_name = $('.dropdown-menu .fullname').text()
+var screen_name = $('.dropdown-menu .account-summary').attr('href').replace("/", "");
 
 var root = $('<li/>').attr('class', 'lists')
            .appendTo('#global-actions');
